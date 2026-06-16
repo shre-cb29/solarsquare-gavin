@@ -104,9 +104,16 @@
 <div class="doc-header">
   <div>
     <div class="doc-title">SolarSquare — Investor Q&A</div>
-    <div class="doc-sub">Prepared by Good Capital &nbsp;·&nbsp; June 2026 &nbsp;·&nbsp; INR Crores unless stated</div>
+    <div class="doc-sub">Prepared by Good Capital &nbsp;·&nbsp; June 2026</div>
   </div>
-  <div class="doc-meta">For Gavin / Sunny position<br>Confidential</div>
+  <div class="doc-meta">For Gavin / Sunny<br>Confidential</div>
+</div>
+
+<div id="currency-bar" style="display:flex; align-items:center; gap:12px; margin-bottom:24px; padding:10px 14px; background:#fff; border:1px solid #E0DDD8; border-radius:6px; font-size:12px;">
+  <span style="color:#555;">View figures in:</span>
+  <button onclick="setCurrency('inr')" id="btn-inr" style="padding:4px 12px; border-radius:4px; border:1.5px solid #1A1A1A; background:#1A1A1A; color:#fff; font-size:11px; font-weight:700; cursor:pointer;">₹ INR</button>
+  <button onclick="setCurrency('usd')" id="btn-usd" style="padding:4px 12px; border-radius:4px; border:1.5px solid #CCC; background:#fff; color:#555; font-size:11px; font-weight:700; cursor:pointer;">$ USD</button>
+  <span id="currency-note" style="color:#999; font-size:11px;">All figures in INR Crores</span>
 </div>
 
 <div class="category-header">Financial</div>
@@ -117,7 +124,7 @@
     <div class="q-num">01</div>
     <div class="q-main">
       <div class="q-title">Audited FY24 & FY25 statements</div>
-      <div class="q-summary">Management P&L below. Revenue grew from ₹170 Cr (FY24) → ₹353 Cr (FY25) → ₹681 Cr (FY26); EBITDA margin improved from −26% to −14% over the period.</div>
+      <div class="q-summary">Management P&L below. Revenue grew from ₹170 Cr / $18.9 Mn (FY24) → ₹353 Cr / $39.2 Mn (FY25) → ₹681 Cr / $75.7 Mn (FY26); EBITDA margin improved from −26% to −14% over the period.</div>
     </div>
     <div class="q-toggle">Details</div>
   </div>
@@ -125,28 +132,28 @@
     <div class="table-wrap"><table>
       <thead><tr><th style="width:36%">INR Crores</th><th>FY24A</th><th>FY25A</th><th>FY26A</th><th>FY26 vs FY24</th></tr></thead>
       <tbody>
-        <tr class="metric-row"><td>Total Revenue</td><td>169.7</td><td>353.2</td><td>681.1</td><td class="growth-pos">+301%</td></tr>
+        <tr class="metric-row"><td>Total Revenue</td><td data-inr="169.7">169.7</td><td data-inr="353.2">353.2</td><td data-inr="681.1">681.1</td><td class="growth-pos">+301%</td></tr>
         <tr class="pct-row"><td>B2C / B2B split</td><td>60% / 40%</td><td>72% / 27%</td><td>84% / 16%</td><td class="neutral">—</td></tr>
         <tr class="spacer-row"><td colspan="5"></td></tr>
-        <tr class="metric-row"><td>Gross Profit</td><td>43.3</td><td>130.0</td><td>276.1</td><td class="growth-pos">+537%</td></tr>
+        <tr class="metric-row"><td>Gross Profit</td><td data-inr="43.3">43.3</td><td data-inr="130.0">130.0</td><td data-inr="276.1">276.1</td><td class="growth-pos">+537%</td></tr>
         <tr class="pct-row"><td>Gross Margin %</td><td>25.5%</td><td>36.8%</td><td>40.5%</td><td class="growth-pos">+1,500 bps</td></tr>
         <tr class="spacer-row"><td colspan="5"></td></tr>
-        <tr class="metric-row"><td>CM1 (post fulfilment)</td><td>9.6</td><td>63.8</td><td>135.1</td><td class="growth-pos">+1,307%</td></tr>
+        <tr class="metric-row"><td>CM1 (post fulfilment)</td><td data-inr="9.6">9.6</td><td data-inr="63.8">63.8</td><td data-inr="135.1">135.1</td><td class="growth-pos">+1,307%</td></tr>
         <tr class="pct-row"><td>CM1 %</td><td>5.7%</td><td>18.1%</td><td>19.8%</td><td class="growth-pos">+1,410 bps</td></tr>
         <tr class="spacer-row"><td colspan="5"></td></tr>
-        <tr class="metric-row"><td>CM2 (post S&M)</td><td>0.2</td><td>36.9</td><td>65.5</td><td class="growth-pos">NM</td></tr>
+        <tr class="metric-row"><td>CM2 (post S&M)</td><td data-inr="0.2">0.2</td><td data-inr="36.9">36.9</td><td data-inr="65.5">65.5</td><td class="growth-pos">NM</td></tr>
         <tr class="pct-row"><td>CM2 %</td><td>0.1%</td><td>10.5%</td><td>9.6%</td><td class="growth-pos">+950 bps</td></tr>
         <tr class="spacer-row"><td colspan="5"></td></tr>
-        <tr class="metric-row"><td>Total Fixed / HO costs</td><td>44.8</td><td>57.4</td><td>163.0</td><td class="growth-neg">+263%</td></tr>
+        <tr class="metric-row"><td>Total Fixed / HO costs</td><td data-inr="44.8">44.8</td><td data-inr="57.4">57.4</td><td data-inr="163.0">163.0</td><td class="growth-neg">+263%</td></tr>
         <tr class="spacer-row"><td colspan="5"></td></tr>
-        <tr class="highlight-row"><td>EBITDA</td><td class="neg">(44.1)</td><td class="neg">(20.3)</td><td class="neg">(97.5)</td><td class="growth-neg">−121%</td></tr>
+        <tr class="highlight-row"><td>EBITDA</td><td class="neg" data-inr="-44.1">(44.1)</td><td class="neg" data-inr="-20.3">(20.3)</td><td class="neg" data-inr="-97.5">(97.5)</td><td class="growth-neg">−121%</td></tr>
         <tr class="pct-row"><td>EBITDA %</td><td class="neg">−26.0%</td><td class="neg">−5.7%</td><td class="neg">−14.3%</td><td class="growth-pos">+1,170 bps</td></tr>
-        <tr class="highlight-row"><td>PBT</td><td class="neg">(46.3)</td><td class="neg">(19.0)</td><td class="neg">(82.6)</td><td class="growth-neg">−78%</td></tr>
+        <tr class="highlight-row"><td>PBT</td><td class="neg" data-inr="-46.3">(46.3)</td><td class="neg" data-inr="-19.0">(19.0)</td><td class="neg" data-inr="-82.6">(82.6)</td><td class="growth-neg">−78%</td></tr>
         <tr class="pct-row"><td>PBT %</td><td class="neg">−27.3%</td><td class="neg">−5.4%</td><td class="neg">−12.1%</td><td class="growth-pos">+1,520 bps</td></tr>
       </tbody>
     </table>
 </div>
-    <p class="fn-small">Figures from SolarSquare's management accounts (unaudited). FY26 EBITDA deteriorated vs FY25 primarily because HO salaries nearly tripled (₹35 Cr → ₹93 Cr) as the company built out leadership post-Series B. FY27 AOP targets −3% to −5% EBITDA as fixed costs are absorbed.</p>
+    <p class="fn-small">Figures from SolarSquare's management accounts (unaudited). FY26 EBITDA deteriorated vs FY25 primarily because HO salaries nearly tripled (₹35 Cr / $3.9 Mn → ₹93 Cr / $10.3 Mn) as the company built out leadership post-Series B. FY27 AOP targets −3% to −5% EBITDA as fixed costs are absorbed.</p>
   </div>
 </div>
 
@@ -164,13 +171,13 @@
     <div class="table-wrap"><table>
       <thead><tr><th style="width:36%">INR Crores</th><th>FY24A</th><th>FY25A</th><th>FY26A</th></tr></thead>
       <tbody>
-        <tr class="metric-row"><td>B2C Revenue</td><td>101.0</td><td>255.6</td><td>570.6</td></tr>
+        <tr class="metric-row"><td>B2C Revenue</td><td data-inr="101.0">101.0</td><td data-inr="255.6">255.6</td><td data-inr="570.6">570.6</td></tr>
         <tr class="pct-row"><td>B2C GM %</td><td>29.3%</td><td>41.7%</td><td>42.6%</td></tr>
         <tr class="spacer-row"><td colspan="4"></td></tr>
-        <tr class="metric-row"><td>B2B Revenue</td><td>67.0</td><td>95.5</td><td>108.3</td></tr>
+        <tr class="metric-row"><td>B2B Revenue</td><td data-inr="67.0">67.0</td><td data-inr="95.5">95.5</td><td data-inr="108.3">108.3</td></tr>
         <tr class="pct-row"><td>B2B GM %</td><td>18.1%</td><td>22.3%</td><td>28.7%</td></tr>
         <tr class="spacer-row"><td colspan="4"></td></tr>
-        <tr class="highlight-row"><td>Total Revenue</td><td>169.7</td><td>353.2</td><td>681.1</td></tr>
+        <tr class="highlight-row"><td>Total Revenue</td><td data-inr="169.7">169.7</td><td data-inr="353.2">353.2</td><td data-inr="681.1">681.1</td></tr>
         <tr class="highlight-row"><td>Blended GM %</td><td>25.5%</td><td>36.8%</td><td>40.5%</td></tr>
       </tbody>
     </table>
@@ -184,7 +191,7 @@
     <div class="q-num">03</div>
     <div class="q-main">
       <div class="q-title">Actual cash burn</div>
-      <div class="q-summary">EBITDA burn was ₹44 Cr (FY24), ₹20 Cr (FY25), and ₹98 Cr (FY26). Net cash outflow in FY26 (excluding fundraise) was ₹32 Cr. Cash in bank is ₹291 Cr as of March 2026.</div>
+      <div class="q-summary">EBITDA burn was ₹44 Cr / $4.9 Mn (FY24), ₹20 Cr / $2.2 Mn (FY25), and ₹98 Cr / $10.9 Mn (FY26). Net cash outflow in FY26 (excluding fundraise) was ₹32 Cr / $3.6 Mn. Cash in bank is ₹291 Cr / $32.3 Mn as of March 2026.</div>
     </div>
     <div class="q-toggle">Details</div>
   </div>
@@ -192,20 +199,20 @@
     <div class="table-wrap"><table>
       <thead><tr><th style="width:36%">INR Crores</th><th>FY24A</th><th>FY25A</th><th>FY26A</th></tr></thead>
       <tbody>
-        <tr class="metric-row"><td>Total Revenue</td><td>169.7</td><td>353.2</td><td>681.1</td></tr>
+        <tr class="metric-row"><td>Total Revenue</td><td data-inr="169.7">169.7</td><td data-inr="353.2">353.2</td><td data-inr="681.1">681.1</td></tr>
         <tr class="spacer-row"><td colspan="4"></td></tr>
-        <tr class="metric-row"><td>EBITDA</td><td class="neg">(44.1)</td><td class="neg">(20.3)</td><td class="neg">(97.5)</td></tr>
+        <tr class="metric-row"><td>EBITDA</td><td class="neg" data-inr="-44.1">(44.1)</td><td class="neg" data-inr="-20.3">(20.3)</td><td class="neg" data-inr="-97.5">(97.5)</td></tr>
         <tr class="pct-row"><td>EBITDA %</td><td class="neg">−26.0%</td><td class="neg">−5.7%</td><td class="neg">−14.3%</td></tr>
-        <tr class="metric-row"><td>Net cash outflow¹</td><td class="neutral">—</td><td class="neutral">—</td><td class="neg">(31.7)</td></tr>
+        <tr class="metric-row"><td>Net cash outflow¹</td><td class="neutral">—</td><td class="neutral">—</td><td class="neg" data-inr="-31.7">(31.7)</td></tr>
         <tr class="pct-row"><td>Net cash outflow %</td><td class="neutral">—</td><td class="neutral">—</td><td class="neg">−4.7%</td></tr>
         <tr class="spacer-row"><td colspan="4"></td></tr>
-        <tr class="metric-row"><td>Cash & bank equivalents</td><td>59.7</td><td>324.1²</td><td>291.0³</td></tr>
-        <tr class="metric-row"><td>Borrowings</td><td>(32.0)</td><td>(18.3)</td><td>~(12.5)</td></tr>
-        <tr class="metric-row"><td>Net cash</td><td>27.7</td><td>305.9</td><td>~278.5</td></tr>
+        <tr class="metric-row"><td>Cash & bank equivalents</td><td data-inr="59.7">59.7</td><td data-inr="324.1">324.1²</td><td data-inr="291.0">291.0³</td></tr>
+        <tr class="metric-row"><td>Borrowings</td><td data-inr="-32.0">(32.0)</td><td data-inr="-18.3">(18.3)</td><td data-inr="-12.5">~(12.5)</td></tr>
+        <tr class="metric-row"><td>Net cash</td><td data-inr="27.7">27.7</td><td data-inr="305.9">305.9</td><td data-inr="278.5">~278.5</td></tr>
       </tbody>
     </table>
 </div>
-    <p class="fn-small">¹ FY26 net cash outflow = Mar-26 cash (₹291 Cr) minus Mar-25 cash (₹322.7 Cr); no fundraise in FY26. FY24/FY25 not shown as fundraise proceeds cannot be cleanly separated. ² Includes ~₹285 Cr Series B proceeds. ³ Mar-26 per management update.</p>
+    <p class="fn-small">¹ FY26 net cash outflow = Mar-26 cash (₹291 Cr / $32.3 Mn) minus Mar-25 cash (₹322.7 Cr / $35.9 Mn); no fundraise in FY26. FY24/FY25 not shown as fundraise proceeds cannot be cleanly separated. ² Includes ~₹285 Cr / $31.7 Mn Series B proceeds. ³ Mar-26 per management update.</p>
   </div>
 </div>
 
@@ -298,8 +305,8 @@
     <div class="table-wrap"><table>
       <thead><tr><th style="width:40%">INR Crores</th><th>FY24A</th><th>FY25A</th><th>FY26A</th></tr></thead>
       <tbody>
-        <tr class="metric-row"><td>GZ AMC & Contingent Liability Provision</td><td>0.03</td><td>1.15</td><td>13.35</td></tr>
-        <tr class="metric-row"><td>B2C Revenue</td><td>101.0</td><td>255.6</td><td>570.6</td></tr>
+        <tr class="metric-row"><td>GZ AMC & Contingent Liability Provision</td><td data-inr="0.03">0.03</td><td data-inr="1.15">1.15</td><td data-inr="13.35">13.35</td></tr>
+        <tr class="metric-row"><td>B2C Revenue</td><td data-inr="101.0">101.0</td><td data-inr="255.6">255.6</td><td data-inr="570.6">570.6</td></tr>
         <tr class="pct-row"><td>Provision as % of B2C revenue</td><td>0.02%</td><td>0.45%</td><td>2.34%</td></tr>
       </tbody>
     </table>
@@ -339,7 +346,7 @@
     <div class="q-num">08</div>
     <div class="q-main">
       <div class="q-title">New city economics & time to profitability</div>
-      <div class="q-summary">City-level P&Ls are not available. Founder guidance (Shreya, Jan-26): ₹1–1.5 Cr total investment to reach contribution breakeven per new city. Gross margins are the same as existing cities from Day 1 — the loss in early months is entirely S&M, which runs at ~46% of revenue initially vs ~11% in established cities.</div>
+      <div class="q-summary">City-level P&Ls are not available. Founder guidance (Shreya, Jan-26): ₹1–1.5 Cr (~$111–167k) total investment to reach contribution breakeven per new city. Gross margins are the same as existing cities from Day 1 — the loss in early months is entirely S&M, which runs at ~46% of revenue initially vs ~11% in established cities.</div>
     </div>
     <div class="q-toggle">Details</div>
   </div>
@@ -355,7 +362,7 @@
       </tbody>
     </table>
 </div>
-    <p class="prose" style="margin-top:10px;">City-level P&Ls are not maintained or shared with investors. The unit economics above are from the FY27 MIS existing vs. new city split — the closest available proxy. The gross margin in new cities is essentially identical to existing cities from Day 1; what makes new cities loss-making initially is the heavy front-loaded S&M to build brand awareness and generate the first leads. Shreya's guidance is ₹1–1.5 Cr total investment per city to reach contribution breakeven. The company exits markets that don't work — Surat was shut in FY26 due to poor ROI.</p>
+    <p class="prose" style="margin-top:10px;">City-level P&Ls are not maintained or shared with investors. The unit economics above are from the FY27 MIS existing vs. new city split — the closest available proxy. The gross margin in new cities is essentially identical to existing cities from Day 1; what makes new cities loss-making initially is the heavy front-loaded S&M to build brand awareness and generate the first leads. Shreya's guidance is ₹1–1.5 Cr (~$111–167k) total investment per city to reach contribution breakeven. The company exits markets that don't work — Surat was shut in FY26 due to poor ROI.</p>
     <p class="fn-small">¹ New city CM1 moved from −2% (Month 1) to +17% (Month 2) as installs ramped from 45 to 99 homes — directional only, based on Apr-26 and May-26 actuals only.</p>
   </div>
 </div>
@@ -400,17 +407,17 @@
     <div class="q-num">10</div>
     <div class="q-main">
       <div class="q-title">What percentage of growth comes from market growth vs. share gains?</div>
-      <div class="q-summary">SolarSquare's growth is powered by two tailwinds: a large underpenetrated market (21 lakh installations completed vs. a 1 Cr scheme target, against a 5 Cr total TAM) and active share gains within their cities — from under 6% to 7–8% in one year, with 7 cities already above 20%, driven by a premium product converting at higher rates than competitors.</div>
+      <div class="q-summary">SolarSquare's growth is powered by two tailwinds: a large underpenetrated market (2.1 million installations completed vs. a 10 million scheme target, against a 50 million total TAM) and active share gains within their cities — from under 6% to 7–8% in one year, with 7 cities already above 20%, driven by a premium product converting at higher rates than competitors.</div>
     </div>
     <div class="q-toggle">Details</div>
   </div>
   <div class="q-detail">
     <div class="detail-label">Tailwind 1 — Market expansion</div>
-    <p class="prose">India has 5 Cr eligible homes for rooftop solar today, expanding to 7 Cr by FY35 as new construction and rising electricity consumption bring more households into viability. The PM Surya Ghar scheme targeted 1 Cr of these (20% of current TAM) with a ₹75,201 Cr outlay — as of January 2026, only 21 lakh installations have been completed (21% of scheme target), with just 22% of funds disbursed. Roughly 79 lakh homes remain under the scheme alone, before the 4 Cr homes outside it. The scheme's bigger impact on SolarSquare has been structural: normalising solar as a purchase decision, driving financing costs from 15–17% to 8%, and building national permit infrastructure that makes the category easier to sell.</p>
+    <p class="prose">India has 50 million eligible homes for rooftop solar today, expanding to 70 million by FY35 as new construction and rising electricity consumption bring more households into viability. The PM Surya Ghar scheme targeted 10 million of these (20% of current TAM) with a ₹75,201 Cr (~$8.4 Bn) outlay — as of January 2026, only 2.1 million installations have been completed (21% of scheme target), with just 22% of funds disbursed. Roughly 7.9 million homes remain under the scheme alone, before the 40 million homes outside it. The scheme's bigger impact on SolarSquare has been structural: normalising solar as a purchase decision, driving financing costs from 15–17% to 8%, and building national permit infrastructure that makes the category easier to sell.</p>
     <div class="detail-label">Tailwind 2 — In-market share gains</div>
-    <p class="prose">Within their 19 operating cities, market share grew from under 6% (FY25) to 7–8% (FY26), targeting 13–14% by FY27 — with 7 cities already above 20%. This is happening at a price premium: SolarSquare's systems cost ₹2.25–2.50L vs. Tata's ₹2.10L and the unorganised market's ₹1.8–1.9L. Tata has 63% top-of-mind brand recall but only 4–5% market share; SolarSquare has 2% recall but 8% share — the gap is downstream conversion, driven by the GoodZero performance guarantee (unique in market) and the Speed Order process where a site is measured the day before the sales meeting and the consultant arrives with a completed design and quotation.</p>
+    <p class="prose">Within their 19 operating cities, market share grew from under 6% (FY25) to 7–8% (FY26), targeting 13–14% by FY27 — with 7 cities already above 20%. This is happening at a price premium: SolarSquare's systems cost ₹2.25–2.50L (~$2.5–2.8k) vs. Tata's ₹2.10L (~$2.3k) and the unorganised market's ₹1.8–1.9L (~$2.0–2.1k). Tata has 63% top-of-mind brand recall but only 4–5% market share; SolarSquare has 2% recall but 8% share — the gap is downstream conversion, driven by the GoodZero performance guarantee (unique in market) and the Speed Order process where a site is measured the day before the sales meeting and the consultant arrives with a completed design and quotation.</p>
     <div class="detail-label">Tailwind 3 — Replacement market</div>
-    <p class="prose">With 15–18 lakh homes installed hastily in the last 18 months by unorganised installers, SolarSquare's performance audits find 20–30% of market panels already damaged or underperforming. The company has launched a Maintenance-as-a-Service product targeting this cohort, with 1,000+ customers onboarded across 4 cities and a target of 1 lakh maintenance customers by FY27. This creates an inbound pull from dissatisfied competitor customers rather than SolarSquare having to acquire them.</p>
+    <p class="prose">A large share of India's installed residential solar base was put in by unorganised local installers with no after-sales infrastructure, no performance guarantees, and limited quality controls. SolarSquare's performance audits find 20–30% of market panels already damaged or underperforming. As these systems age and underperform, homeowners increasingly turn to trusted brands for maintenance and replacement — creating an inbound pull that doesn't require SolarSquare to acquire these customers through marketing. The company has launched a Maintenance-as-a-Service product targeting this cohort, with 1,000+ customers onboarded across 4 cities and a target of 100k maintenance customers by FY27.</p>
   </div>
 </div>
 
@@ -420,7 +427,7 @@
     <div class="q-num">11</div>
     <div class="q-main">
       <div class="q-title">What happens if the subsidies disappear?</div>
-      <div class="q-summary">The company already expects PM Surya Ghar to wind down post-FY28 and has modelled a short-term revenue dip. Longer term, it is seen as a positive: market consolidation favours organised players, and SolarSquare is the only company past 10,000 installations. From a customer standpoint, payback extends only modestly. And the broader TAM — 4 Cr+ homes still to go solar — is independent of the subsidy.</div>
+      <div class="q-summary">The company already expects PM Surya Ghar to wind down post-FY28 and has modelled a short-term revenue dip. Longer term, it is seen as a positive: market consolidation favours organised players, and SolarSquare is the only company past 10,000 installations. From a customer standpoint, payback extends only modestly. And the broader TAM — 40 million homes still to go solar — is independent of the subsidy.</div>
     </div>
     <div class="q-toggle">Details</div>
   </div>
@@ -428,19 +435,19 @@
     <div class="detail-label">Market structure impact — the primary story</div>
     <p class="prose">SolarSquare already expects PM Surya Ghar to wind down post-FY28 and has modelled a revenue dip in the transition year. Beyond that short-term dip, subsidy removal is net positive for SolarSquare. The scheme brought in a large number of fly-by-night installers: of ~20,000 installers registered on the National Solar Portal, only 30 have completed more than 1,000 installations and SolarSquare is the only one past 10,000. When the subsidy pulse fades, unorganised players exit and market share consolidates around brands with financing relationships, after-sales infrastructure, and performance guarantees. The FY23 MP subsidy shutdown is the precedent: cancellations spiked to ~24% that year but fully recovered as customers with genuine conviction remained.</p>
     <div class="detail-label">Consumer payback impact — secondary, and manageable</div>
-    <p class="prose">Per SolarSquare's Jan-26 approach document modelling a standard 3.24 kW system, payback extends from 3.6 to 4.6 years post-subsidy, partially offset by panel price declines from ₹21–22/watt to ₹17/watt as manufacturing scales.</p>
+    <p class="prose">Per SolarSquare's Jan-26 approach document modelling a standard 3.24 kW system, payback extends from 3.6 to 4.6 years post-subsidy, partially offset by panel price declines from ₹21–22/watt (~$0.23–0.24/watt) to ₹17/watt (~$0.19/watt) as manufacturing scales.</p>
     <div class="table-wrap"><table>
       <thead><tr><th style="width:38%">Customer Economics (3.24 kW system)</th><th>With Subsidy (FY26)</th><th>Without Subsidy (FY29E)</th></tr></thead>
       <tbody>
-        <tr class="metric-row"><td>Net cost to customer</td><td>₹1,57,000</td><td>₹2,22,000</td></tr>
+        <tr class="metric-row"><td>Net cost to customer</td><td><span class="inr-val">₹157,000</span><span class="usd-val" style="display:none">$1,744</span></td><td><span class="inr-val">₹222,000</span><span class="usd-val" style="display:none">$2,467</span></td></tr>
         <tr class="metric-row"><td>Payback period</td><td>3.6 years</td><td>4.6 years</td></tr>
         <tr class="metric-row"><td>Customer IRR</td><td>25–34%</td><td>18–20%</td></tr>
-        <tr class="metric-row"><td>Total lifetime savings (25 yr)</td><td>₹11.94 Lakhs</td><td>₹12.52 Lakhs</td></tr>
+        <tr class="metric-row"><td>Total lifetime savings (25 yr)</td><td><span class="inr-val">₹11.94 Lakhs</span><span class="usd-val" style="display:none">$13.3k</span></td><td><span class="inr-val">₹12.52 Lakhs</span><span class="usd-val" style="display:none">$13.9k</span></td></tr>
       </tbody>
     </table>
 </div>
     <div class="detail-label">The bigger picture — TAM independent of subsidy</div>
-    <p class="prose">The subsidy addresses a fraction of the overall opportunity. India has 5 Cr eligible homes of which only ~25–30 lakh have gone solar — roughly 5–6% penetration. PM Surya Ghar's entire 1 Cr target, if fully achieved, would bring penetration to ~20%. The remaining 4 Cr homes represent a market solar must win on its own economics — and with a 4–5 year payback, the fundamentals are there independent of any subsidy.</p>
+    <p class="prose">The subsidy addresses a fraction of the overall opportunity. India has 50 million eligible homes of which only ~2.5–3 million have gone solar — roughly 5–6% penetration. PM Surya Ghar's entire 10 million target, if fully achieved, would bring penetration to ~20%. The remaining 40 million homes represent a market solar must win on its own economics — and with a 4–5 year payback, the fundamentals are there independent of any subsidy.</p>
   </div>
 </div>
 
@@ -460,11 +467,68 @@
   </div>
 </div>
 
+
 <script>
+const RATE = 90; // 1 USD = ₹90 INR (constant currency)
+
+function setCurrency(cur) {
+  const cells = document.querySelectorAll('[data-inr]');
+  const isUSD = cur === 'usd';
+
+  cells.forEach(el => {
+    const inrVal = parseFloat(el.getAttribute('data-inr'));
+    const isNeg = inrVal < 0;
+    const abs = Math.abs(inrVal);
+
+    if (isUSD) {
+      const usdMn = abs * 10 / RATE;
+      const formatted = usdMn >= 100
+        ? '$' + usdMn.toFixed(1) + ' Mn'
+        : '$' + usdMn.toFixed(1) + ' Mn';
+      el.textContent = isNeg ? '(' + formatted + ')' : formatted;
+    } else {
+      const formatted = abs.toFixed(1).replace(/\.0$/, '');
+      el.textContent = isNeg ? '(' + formatted + ')' : formatted;
+    }
+  });
+
+  // Toggle inr-val / usd-val spans (for rupee-denominated cells like customer economics)
+  document.querySelectorAll('.inr-val').forEach(el => {
+    el.style.display = isUSD ? 'none' : '';
+  });
+  document.querySelectorAll('.usd-val').forEach(el => {
+    el.style.display = isUSD ? '' : 'none';
+  });
+
+  // Update header row labels
+  const headers = document.querySelectorAll('[data-col-header]');
+  headers.forEach(h => {
+    if (isUSD) h.textContent = h.getAttribute('data-usd-label');
+    else h.textContent = h.getAttribute('data-inr-label');
+  });
+
+  // Update note and button styles
+  document.getElementById('currency-note').textContent = isUSD
+    ? 'USD figures at constant ₹90/$1 rate — to show real business growth'
+    : 'All figures in INR Crores';
+  document.getElementById('btn-inr').style.cssText = isUSD
+    ? 'padding:4px 12px;border-radius:4px;border:1.5px solid #CCC;background:#fff;color:#555;font-size:11px;font-weight:700;cursor:pointer;'
+    : 'padding:4px 12px;border-radius:4px;border:1.5px solid #1A1A1A;background:#1A1A1A;color:#fff;font-size:11px;font-weight:700;cursor:pointer;';
+  document.getElementById('btn-usd').style.cssText = isUSD
+    ? 'padding:4px 12px;border-radius:4px;border:1.5px solid #1A1A1A;background:#1A1A1A;color:#fff;font-size:11px;font-weight:700;cursor:pointer;'
+    : 'padding:4px 12px;border-radius:4px;border:1.5px solid #CCC;background:#fff;color:#555;font-size:11px;font-weight:700;cursor:pointer;';
+
+  // Update table column headers that say "INR Crores"
+  document.querySelectorAll('th').forEach(th => {
+    if (th.textContent.trim() === 'INR Crores') th.textContent = isUSD ? 'USD Millions' : 'INR Crores';
+  });
+}
+
 function toggle(id) {
   const el = document.getElementById(id);
   el.classList.toggle('open');
 }
 </script>
+
 </body>
 </html>
